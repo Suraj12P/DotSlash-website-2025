@@ -68,14 +68,18 @@ const Navbar = () => {
 
         {/* Desktop Menu */}
         <div className="hidden md:flex items-center gap-8 text-lg font-medium">
-          <Link href="/#events" className="hover:underline font-unbounded">Events</Link>
-          <Link href="/#gallery" className="hover:underline font-unbounded">Gallery</Link>
-          <Link href="https://forms.gle/27HZHNDRMSY6ydhR7" target="_blank" className="bg-black text-[#C49A32] px-10 py-2 rounded-full font-medium font-unbounded hover:opacity-80 group relative overflow-hidden">
+          {/* <Link href="/#events" className="hover:underline font-unbounded">
+          Events
+          </Link> */}
+          <Link href="/#gallery" className="hover:underline font-unbounded">
+          Gallery
+          </Link>
+          <Link href="/events" target="_blank" className="bg-black text-[#C49A32] px-10 py-2 rounded-full font-medium font-unbounded hover:opacity-80 group relative overflow-hidden">
             <div className="group-hover:-translate-y-11 ease-in-out-expo transition duration-700 ease-[cubic-bezier(0, 0, 0, 1)]">
-              D-Solve
+              Events
             </div>
             <div className="absolute left-0 top-16 group-hover:top-0 transition-all delay-75 duration-700 ease-in-out-expo text-black bg-[#D1A83A] w-full h-full flex items-center justify-center rounded-full border-black border-[2px]">
-              D-Solve
+              Events
             </div>
           </Link>
         </div>
@@ -96,13 +100,13 @@ const Navbar = () => {
               : "opacity-0 -translate-y-4 pointer-events-none"
           }`}
         >
-          <Link
+          {/* <Link
             href="/#events" 
             className="hover:underline font-unbounded text-lg"
             onClick={() => setMenuOpen(false)}
           >
             Events
-          </Link>
+          </Link> */}
           <Link
             href="/#gallery" 
             className="hover:underline font-unbounded text-lg"
@@ -111,11 +115,11 @@ const Navbar = () => {
             Gallery
           </Link>
           <Link
-            href="https://forms.gle/27HZHNDRMSY6ydhR7"
+            href="/events"
             className="bg-black text-[#C49A32] px-10 py-2 rounded-full font-medium font-unbounded hover:opacity-80 text-lg"
             onClick={() => setMenuOpen(false)}
           >
-            D-Solve
+            Events
           </Link>
         </div>
       </div>
